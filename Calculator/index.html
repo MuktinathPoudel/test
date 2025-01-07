@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    <div class="calculator">
+        <input type="text" class="calculator-screen" id="output" onkeyup="onInputChange(event)" placeholder="Enter expression and press Enter">
+        <div class="calculator-button" onclick="appendToOutput('7')">7</div>
+        <div class="calculator-button" onclick="appendToOutput('8')">8</div>
+        <div class="calculator-button" onclick="appendToOutput('9')">9</div>
+        <div class="calculator-button" onclick="appendToOutput('+')">+</div>
+        <div class="calculator-button" onclick="appendToOutput('4')">4</div>
+        <div class="calculator-button" onclick="appendToOutput('5')">5</div>
+        <div class="calculator-button" onclick="appendToOutput('6')">6</div>
+        <div class="calculator-button" onclick="appendToOutput('-')">-</div>
+        <div class="calculator-button" onclick="appendToOutput('1')">1</div>
+        <div class="calculator-button" onclick="appendToOutput('2')">2</div>
+        <div class="calculator-button" onclick="appendToOutput('3')">3</div>
+        <div class="calculator-button" onclick="appendToOutput('*')">*</div>
+        <div class="calculator-button" onclick="appendToOutput('0')">0</div>
+        <div class="calculator-button" onclick="clearOutput()">C</div>
+        <div class="calculator-button" onclick="calculateResult()">=</div>
+        <div class="calculator-button" onclick="appendToOutput('/')">/</div>
+    </div>
+    <script src="calculator.js"></script>
+</body>
+</html>

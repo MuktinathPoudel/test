@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Welcome to My Webpage</title>
+</head>
+<body>
+	<h1>Welcome</h1>
+	<p>Hi, My name is Muktinath Poudel. Currently, I'm studying in Presidential Business School. I have intermediate knowledge of HTML, JS, Python.</p>
+	<p>How can I help you?</p>
+	<button onclick="showHtml()">HTML</button>
+	<button onclick="showJs()">JS</button>
+	<button onclick="showPython()">Python</button>
+
+	<div id="html">
+		<h2>HTML</h2>
+		<p>HTML stands for HyperText Markup Language. It is used for creating web pages and web applications. HTML provides the structure and content of a webpage, and it uses markup tags to describe the different elements of a webpage. HTML is the foundation of the World Wide Web and is essential for web development.</p>
+		<p>Uses of HTML:</p>
+		<ul>
+			<li>Creating web pages</li>
+			<li>Creating web applications</li>
+			<li>Creating emails and newsletters</li>
+			<li>Creating mobile apps</li>
+		</ul>
+		<p>Importance of HTML:</p>
+		<ul>
+			<li>It is the foundation of the World Wide Web</li>
+			<li>It is essential for web development</li>
+			<li>It is easy to learn and use</li>
+			<li>It is supported by all web browsers</li>
+		</ul>
+	</div>
+
+	<div id="js">
+		<h2>JavaScript</h2>
+		<p>JavaScript is a programming language used for creating dynamic and interactive web pages. It is a client-side scripting language that runs on the user's web browser. JavaScript is used for adding interactivity, creating animations, validating forms, and much more. It is an essential part of modern web development.</p>
+		<p>Uses of JavaScript:</p>
+		<ul>
+			<li>Adding interactivity to web pages</li>
+			<li>Creating animations and effects</li>
+			<li>Validating forms</li>
+			<li>Creating dynamic web applications</li>
+		</ul>
+		<p>Importance of JavaScript:</p>
+		<ul>
+			<li>It is essential for modern web development</li>
+			<li>It is a client-side scripting language</li>
+			<li>It is easy to learn and use</li>
+			<li>It is supported by all web browsers</li>
+		</ul>
+	</div>
+
+	<div id="python">
+		<h2>Python</h2>
+		<p>Python is a high-level programming language used for general-purpose programming. It is easy to learn and use, and it has a simple syntax that makes it readable and easy to understand. Python is used for web development, data analysis, artificial intelligence, machine learning, and much more.</p>
+		<p>Uses of Python:</p>
+		<ul>
+			<li>Web development</li>
+			<li>Data analysis</li>
+			<li>Artificial intelligence</li>
+			<li>Machine learning</li>
+		</ul>
+		<p>Importance of Python:</p>
+		
+	<ul>
+		<li>It is easy to learn and use</li>
+		<li>It has a large and active community</li>
+		<li>It has a wide range of applications</li>
+		<li>It is used by many large companies, such as Google, Facebook, and Amazon</li>
+	</ul>
+</div>
+
+<p>Thank you for visiting. Hope to see you again! Cheers!</p>
+
+<script>
+	function showHtml() {
+		document.getElementById("html").style.display = "block";
+		document.getElementById("js").style.display = "none";
+		document.getElementById("python").style.display = "none";
+	}
+
+	function showJs() {
+		document.getElementById("html").style.display = "none";
+		document.getElementById("js").style.display = "block";
+		document.getElementById("python").style.display = "none";
+	}
+
+	function showPython() {
+		document.getElementById("html").style.display = "none";
+		document.getElementById("js").style.display = "none";
+		document.getElementById("python").style.display = "block";
+	}
+</script>

@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Code with Tron</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+        }
+        
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            animation: logo-animation 2s ease-in-out 2s forwards;
+        }
+        
+        .logo img {
+            height: 100px;
+            animation: logo-slide 2s ease-in-out 2s forwards;
+        }
+        
+        .logo-text {
+            font-family: 'Arial Black', sans-serif;
+            font-size: 24px;
+            color: #333;
+            margin-left: 10px;
+            opacity: 0;
+            animation: text-slide 2s ease-in-out 2s forwards;
+        }
+        
+        @keyframes logo-animation {
+            0% {
+                transform: scale(1);
+            }
+            100% {
+                transform: scale(0);
+            }
+        }
+        
+        @keyframes logo-slide {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(200px);
+            }
+        }
+        
+        @keyframes text-slide {
+            0% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+            100% {
+                transform: translateX(-200px);
+                opacity: 0;
+            }
+        }
+        
+        
+        nav ul {
+            list-style: none;
+            background-color: #f2f2f2;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        
+        nav li {
+            margin-right: 20px;
+        }
+        
+        nav li a {
+            text-decoration: none;
+            color: #333;
+            font-size: 18px;
+            padding: 5px;
+            transition: color 0.3s ease;
+        }
+        
+        nav li a:hover {
+            color: #000;
+        }
+        
+        
+        section {
+            padding: 50px 0;
+            background-color: #f9f9f9;
+            text-align: center;
+        }
+        
+        h2 {
+            font-size: 32px;
+            margin-bottom: 30px;
+        }
+        
+        .service {
+            margin-bottom: 40px;
+        }
+        
+        h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        
+        p {
+            font-size: 18px;
+            color: #666;
+            line-height: 1.6;
+        }
+        
+        .project {
+            margin-bottom: 40px;
+        }
+        
+        .team-member {
+            margin-bottom: 40px;
+            text-align: center;
+        }
+        
+        .team-member img {
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+        
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        
+        .contact {
+            margin-bottom: 20px;
+        }
+        
+        .contact h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        
+        .contact p {
+            font-size: 18px;
+            color: #ccc;
+            margin-bottom: 5px;
+        }
+        
+        .contact a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .contact a:hover {
+            color: #999;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="Logo.png" alt="Code with Tron">
+            <h1 class="logo-text">CODE WITH TRON</h1>
+        </div>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#works">Our Works</a></li>
+            <li><a href="#team">Our Team</a></li>
+        </ul>
+    </nav>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="service">
+            <h3>Web Development</h3>
+            <p>We specialize in creating responsive and visually appealing websites tailored to meet your specific needs. Our experienced team utilizes the latest web technologies to deliver high-quality and user-friendly web solutions.</p>
+        </div>
+    
+        <div class="service">
+            <h3>App Development</h3>
+            <p>We develop mobile applications for various platforms, including iOS and Android. Whether you need a native app or a cross-platform solution, we have the expertise to bring your app idea to life with seamless functionality and a polished user experience.</p>
+        </div>
+    
+        <div class="service">
+            <h3>Content Writing</h3>
+            <p>Our skilled writers create engaging and persuasive content that resonates with your target audience. From website copy to blog articles, we provide high-quality content that effectively communicates your message and helps you achieve your marketing goals.</p>
+        </div>
+    
+        <div class="service">
+            <h3>Tech Consultation and Training</h3>
+            <p>We offer personalized tech consultation services to address your specific challenges and provide expert advice and solutions. Additionally, we provide comprehensive training programs for beginners, helping them gain the necessary skills and knowledge to thrive in the tech industry.</p>
+        </div>
+    </section>
+    
+
+    <section id="works">
+        <h2>Our Works</h2>
+        <div class="project">
+            <h3>Projects for Personal Growth</h3>
+            <p>As newcomers, we have successfully completed several personal projects that showcase our skills and expertise. Although these projects were not commissioned, they demonstrate our capabilities in web development, app development, and content creation.</p>
+        </div>
+    
+        <div class="project">
+            <h3>Individual Projects</h3>
+            <p>We have undertaken various individual initiatives that highlight our creativity and problem-solving abilities. These projects encompass areas such as website design, mobile app prototyping, and writing engaging content for different niches.</p>
+        </div>
+    
+        <div class="project">
+            <h3>Our Portfolio</h3>
+            <p>Our portfolio comprises diverse personal projects that reflect our passion for technology and innovation. Through these projects, we have gained invaluable experience and honed our skills in delivering high-quality solutions to meet unique challenges.</p>
+        </div>
+    </section>
+    
+
+    <section id="team">
+        <h2>Our Team</h2>
+        <div class="team-member">
+            <h3>Muktinath Poudel</h3>
+            <p>Role: Founder</p>
+            <p>Specialties: Python, JavaScript, CSS, HTML</p>
+            <img src="C:\Users\Asus\OneDrive\Pictures\Screenshot 2022-10-18 185657.png" alt="Muktinath Poudel" width="150" height="150"> 
+            <p>Muktinath Poudel is the driving force behind our company. With a wealth of experience in web development and a passion for creating innovative solutions, Muktinath oversees all aspects of our operations. His expertise in Python, JavaScript, CSS, and HTML enables him to lead our team in delivering top-notch projects.</p>
+        </div>
+    
+        <div class="team-member">
+            <h3>Vacant Position</h3>
+            <p>Role: Python Developer</p>
+            <p>Requirements: Proficiency in Python programming, familiarity with web development frameworks, ability to collaborate in a team environment</p>
+            <p>Description: We are actively seeking a skilled Python Developer to join our team. As a Python Developer, you will contribute to the development of web applications, implement functionality, and collaborate with the team to create efficient and scalable solutions.</p>
+        </div>
+    
+        <div class="team-member">
+            <h3>Vacant Position</h3>
+            <p>Role: Frontend Developer</p>
+            <p>Requirements: Strong knowledge of JavaScript, HTML, and CSS, experience with frontend frameworks (e.g., React, Vue), attention to detail</p>
+            <p>Description: We are looking for a talented Frontend Developer to join our team. As a Frontend Developer, you will be responsible for creating visually appealing and responsive user interfaces, implementing frontend functionalities, and collaborating with designers and backend developers to deliver exceptional web experiences.</p>
+        </div>
+        
+        <div class="team-member">
+            <h3>Vacant Position</h3>
+            <p>Role: UI/UX Designer</p>
+            <p>Description: We are seeking a skilled UI/UX Designer to join our team. As a UI/UX Designer, you will be responsible for creating intuitive and visually appealing user interfaces, conducting user research, and collaborating with developers to implement designs that enhance user experience.</p>
+        </div>
+    </section>
+    
+
+    <footer>
+        <div class="contact">
+            <h2>Contact Us</h2>
+            <p>Email: muktinathpoudel97@gmail.com</p>
+            <p>Phone: 9823766001</p>
+            <p>Location: Kathmandu, Nepal</p>
+            <p>PAN Number: 123456789</p>
+            <p><a href="https://www.linkedin.com/in/muktinath-poudel-7305b2279/">LinkedIn</a></p>
+            <p><a href="muktinathpoudel97@gmail.com">Send us an email</a></p>
+        </div>
+        <p>&copy; 2023 Code with Tron. All rights reserved.</p>
+    </footer>
+
+    
+</body>
+
+</html>
